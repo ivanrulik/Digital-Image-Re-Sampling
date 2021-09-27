@@ -59,12 +59,6 @@ int main(int argc, char **argv)
   }
   ReadPGM(fp);
  
-  // your application here 
-  // As an example, let's just make an inversion of the input image.
-  // for (j=0; j<ydim; j++)
-  //   for (i=0; i<xdim; i++) {
-  //     image[j*xdim+i] = 255 - image[j*xdim+i];
-  //   }
   
   /* Begin writing PGM.... */
   printf("Begin writing PGM.... \n");
@@ -158,21 +152,6 @@ void ReadPGM(FILE* fp)
      fclose(fp);
 }
 
-
-// void WritePGM(FILE* fp)
-// {
-//   int i,j;
-  
-
-//   fprintf(fp, "P5\n%d %d\n%d\n", xdim, ydim, 255);
-//   for (j=0; j<ydim; j++)
-//     for (i=0; i<xdim; i++) {
-//       fputc(image[j*xdim+i], fp);
-//     }
-
-//   fclose(fp);
-  
-// }
 
 void WritePGM(FILE* fp)
 {
